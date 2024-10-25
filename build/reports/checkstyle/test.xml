@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="10.18.2">
+<file name="E:\Projects\audition-api\src\test\java\com\audition\AuditionApplicationTests.java">
+</file>
+<file name="E:\Projects\audition-api\src\test\java\com\audition\exception\PostNotFoundExceptionTest.java">
+</file>
+<file name="E:\Projects\audition-api\src\test\java\com\audition\exception\SystemExceptionTest.java">
+</file>
+<file name="E:\Projects\audition-api\src\test\java\com\audition\model\AuditionPostTest.java">
+</file>
+<file name="E:\Projects\audition-api\src\test\java\com\audition\model\CommentTest.java">
+</file>
+<file name="E:\Projects\audition-api\src\test\java\com\audition\service\AuditionServiceTest.java">
+</file>
+<file name="E:\Projects\audition-api\src\test\java\com\audition\web\AuditionControllerTest.java">
+</file>
+</checkstyle>

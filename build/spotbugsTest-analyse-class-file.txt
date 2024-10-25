@@ -1,0 +1,7 @@
+E:\Projects\audition-api\build\classes\java\test\com\audition\AuditionApplicationTests.class
+E:\Projects\audition-api\build\classes\java\test\com\audition\exception\PostNotFoundExceptionTest.class
+E:\Projects\audition-api\build\classes\java\test\com\audition\exception\SystemExceptionTest.class
+E:\Projects\audition-api\build\classes\java\test\com\audition\model\AuditionPostTest.class
+E:\Projects\audition-api\build\classes\java\test\com\audition\model\CommentTest.class
+E:\Projects\audition-api\build\classes\java\test\com\audition\service\AuditionServiceTest.class
+E:\Projects\audition-api\build\classes\java\test\com\audition\web\AuditionControllerTest.class

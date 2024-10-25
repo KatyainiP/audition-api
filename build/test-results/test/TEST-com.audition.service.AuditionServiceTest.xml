@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.audition.service.AuditionServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2024-10-24T01:52:09" hostname="KATYAINIPANDEY" time="2.247">
+  <properties/>
+  <testcase name="testGetPostByIdReturnsFalse()" classname="com.audition.service.AuditionServiceTest" time="2.043"/>
+  <testcase name="testGetPostsWithFilterReturnsTrue()" classname="com.audition.service.AuditionServiceTest" time="0.011"/>
+  <testcase name="testGetPostWithCommentsFalse()" classname="com.audition.service.AuditionServiceTest" time="0.011"/>
+  <testcase name="testGetCommentsForPostFalse()" classname="com.audition.service.AuditionServiceTest" time="0.103"/>
+  <testcase name="testGetPostByIdReturnsTrue()" classname="com.audition.service.AuditionServiceTest" time="0.004"/>
+  <testcase name="testGetPostWithCommentsTrue()" classname="com.audition.service.AuditionServiceTest" time="0.008"/>
+  <testcase name="testGetPostsWithFilterReturnsFalse()" classname="com.audition.service.AuditionServiceTest" time="0.009"/>
+  <testcase name="testGetCommentsForPostTrue()" classname="com.audition.service.AuditionServiceTest" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

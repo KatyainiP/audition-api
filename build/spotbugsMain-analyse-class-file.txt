@@ -1,0 +1,14 @@
+E:\Projects\audition-api\build\classes\java\main\com\audition\AuditionApplication.class
+E:\Projects\audition-api\build\classes\java\main\com\audition\common\constants\ApiConstants.class
+E:\Projects\audition-api\build\classes\java\main\com\audition\common\exception\PostNotFoundException.class
+E:\Projects\audition-api\build\classes\java\main\com\audition\common\exception\SystemException.class
+E:\Projects\audition-api\build\classes\java\main\com\audition\common\logging\AuditionLogger.class
+E:\Projects\audition-api\build\classes\java\main\com\audition\common\logging\LoggingInterceptor.class
+E:\Projects\audition-api\build\classes\java\main\com\audition\configuration\WebServiceConfiguration.class
+E:\Projects\audition-api\build\classes\java\main\com\audition\dto\AuditionPostDTO.class
+E:\Projects\audition-api\build\classes\java\main\com\audition\integration\AuditionIntegrationClient.class
+E:\Projects\audition-api\build\classes\java\main\com\audition\model\AuditionPost.class
+E:\Projects\audition-api\build\classes\java\main\com\audition\model\Comment.class
+E:\Projects\audition-api\build\classes\java\main\com\audition\service\AuditionService.class
+E:\Projects\audition-api\build\classes\java\main\com\audition\web\advice\ExceptionControllerAdvice.class
+E:\Projects\audition-api\build\classes\java\main\com\audition\web\AuditionController.class

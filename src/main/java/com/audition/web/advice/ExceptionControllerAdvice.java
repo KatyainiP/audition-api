@@ -1,16 +1,18 @@
 package com.audition.web.advice;
 
 import static org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR;
-import static org.springframework.http.HttpStatus.METHOD_NOT_ALLOWED;
 
+import com.audition.common.exception.PostNotFoundException;
 import com.audition.common.exception.SystemException;
 import com.audition.common.logging.AuditionLogger;
 import io.micrometer.common.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ProblemDetail;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -35,7 +37,6 @@ public class ExceptionControllerAdvice extends ResponseEntityExceptionHandler {
 
     }
 
-
     @ExceptionHandler(Exception.class)
     ProblemDetail handleMainException(final Exception e) {
         // TODO Add handling for Exception
@@ -51,7 +52,6 @@ public class ExceptionControllerAdvice extends ResponseEntityExceptionHandler {
         return createProblemDetail(e, status);
 
     }
-
 
     private ProblemDetail createProblemDetail(final Exception exception,
         final HttpStatusCode statusCode) {
@@ -76,7 +76,9 @@ public class ExceptionControllerAdvice extends ResponseEntityExceptionHandler {
         try {
             return HttpStatusCode.valueOf(exception.getStatusCode());
         } catch (final IllegalArgumentException iae) {
-            logger.info(LOG, ERROR_MESSAGE + exception.getStatusCode());
+            if (LOG.isInfoEnabled()) {
+                logger.info(LOG, ERROR_MESSAGE + exception.getStatusCode());
+            }
             return INTERNAL_SERVER_ERROR;
         }
     }
@@ -85,9 +87,17 @@ public class ExceptionControllerAdvice extends ResponseEntityExceptionHandler {
         if (exception instanceof HttpClientErrorException) {
             return ((HttpClientErrorException) exception).getStatusCode();
         } else if (exception instanceof HttpRequestMethodNotSupportedException) {
-            return METHOD_NOT_ALLOWED;
+            return HttpStatus.METHOD_NOT_ALLOWED;
+        }
+        if (LOG.isErrorEnabled()) {
+            LOG.error("Unexpected exception type: {}", exception.getClass().getName());
         }
         return INTERNAL_SERVER_ERROR;
+    }
+
+    @ExceptionHandler(PostNotFoundException.class)
+    ResponseEntity<String> handlePostNotFoundException(final PostNotFoundException ex) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage() + " Post not found " + ex.getCause().getMessage());
     }
 }
 

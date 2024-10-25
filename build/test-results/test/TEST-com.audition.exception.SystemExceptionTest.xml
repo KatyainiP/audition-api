@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.audition.exception.SystemExceptionTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-10-24T01:52:09" hostname="KATYAINIPANDEY" time="0.017">
+  <properties/>
+  <testcase name="testSystemExceptionWithDetailTitleAndThrowable()" classname="com.audition.exception.SystemExceptionTest" time="0.001"/>
+  <testcase name="testSystemExceptionWithMessageAndThrowable()" classname="com.audition.exception.SystemExceptionTest" time="0.002"/>
+  <testcase name="testSystemExceptionWithDetailTitleAndErrorCode()" classname="com.audition.exception.SystemExceptionTest" time="0.001"/>
+  <testcase name="testSystemExceptionWithAllParameters()" classname="com.audition.exception.SystemExceptionTest" time="0.001"/>
+  <testcase name="testSystemExceptionWithMessageAndErrorCode()" classname="com.audition.exception.SystemExceptionTest" time="0.001"/>
+  <testcase name="testSystemExceptionWithDetailErrorCodeAndThrowable()" classname="com.audition.exception.SystemExceptionTest" time="0.001"/>
+  <testcase name="testSystemExceptionWithMessage()" classname="com.audition.exception.SystemExceptionTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

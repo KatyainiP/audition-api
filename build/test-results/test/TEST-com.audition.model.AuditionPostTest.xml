@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.audition.model.AuditionPostTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-10-24T01:52:09" hostname="KATYAINIPANDEY" time="0.013">
+  <properties/>
+  <testcase name="testGetCommentsReturnsCopy()" classname="com.audition.model.AuditionPostTest" time="0.005"/>
+  <testcase name="testSettersAndGetters()" classname="com.audition.model.AuditionPostTest" time="0.001"/>
+  <testcase name="testSetCommentsCreatesNewList()" classname="com.audition.model.AuditionPostTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

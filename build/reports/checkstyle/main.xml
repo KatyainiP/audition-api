@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="10.18.2">
+<file name="E:\Projects\audition-api\src\main\java\com\audition\AuditionApplication.java">
+</file>
+<file name="E:\Projects\audition-api\src\main\java\com\audition\common\constants\ApiConstants.java">
+</file>
+<file name="E:\Projects\audition-api\src\main\java\com\audition\common\exception\PostNotFoundException.java">
+</file>
+<file name="E:\Projects\audition-api\src\main\java\com\audition\common\exception\SystemException.java">
+</file>
+<file name="E:\Projects\audition-api\src\main\java\com\audition\common\logging\AuditionLogger.java">
+</file>
+<file name="E:\Projects\audition-api\src\main\java\com\audition\common\logging\LoggingInterceptor.java">
+</file>
+<file name="E:\Projects\audition-api\src\main\java\com\audition\configuration\OpenTelemetryConfig.java">
+</file>
+<file name="E:\Projects\audition-api\src\main\java\com\audition\configuration\ResponseHeaderInjector.java">
+</file>
+<file name="E:\Projects\audition-api\src\main\java\com\audition\configuration\WebServiceConfiguration.java">
+</file>
+<file name="E:\Projects\audition-api\src\main\java\com\audition\dto\AuditionPostDTO.java">
+</file>
+<file name="E:\Projects\audition-api\src\main\java\com\audition\integration\AuditionIntegrationClient.java">
+</file>
+<file name="E:\Projects\audition-api\src\main\java\com\audition\model\AuditionPost.java">
+</file>
+<file name="E:\Projects\audition-api\src\main\java\com\audition\model\Comment.java">
+</file>
+<file name="E:\Projects\audition-api\src\main\java\com\audition\service\AuditionService.java">
+</file>
+<file name="E:\Projects\audition-api\src\main\java\com\audition\web\advice\ExceptionControllerAdvice.java">
+</file>
+<file name="E:\Projects\audition-api\src\main\java\com\audition\web\AuditionController.java">
+</file>
+</checkstyle>

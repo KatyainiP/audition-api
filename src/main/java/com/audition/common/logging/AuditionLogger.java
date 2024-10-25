@@ -1,12 +1,14 @@
 package com.audition.common.logging;
 
-import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ProblemDetail;
 import org.springframework.stereotype.Component;
 
 @Component
 public class AuditionLogger {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(AuditionLogger.class);
 
     public void info(final Logger logger, final String message) {
         if (logger.isInfoEnabled()) {
@@ -58,12 +60,21 @@ public class AuditionLogger {
     }
 
     private String createStandardProblemDetailMessage(final ProblemDetail standardProblemDetail) {
-        // TODO Add implementation here.
-        return StringUtils.EMPTY;
+        if (LOGGER.isErrorEnabled()) {
+            LOGGER.error("ProblemDetail: Status: {}, Title: {}, Detail: {}, Additional Info: {}",
+                standardProblemDetail.getStatus(),
+                standardProblemDetail.getTitle(),
+                standardProblemDetail.getDetail(),
+                "Logging.."); // Provide the fourth argument as needed
+        }
+        return String.format("Error occurred: %s (Status: %d) - %s",
+            standardProblemDetail.getTitle(),
+            standardProblemDetail.getStatus(),
+            standardProblemDetail.getDetail());
     }
 
     private String createBasicErrorResponseMessage(final Integer errorCode, final String message) {
-        // TODO Add implementation here.
-        return StringUtils.EMPTY;
+        LOGGER.error("Error occurred - Code: {}, Message: {}", errorCode, message);
+        return String.format("Error Code: %d, Message: %s", errorCode, message);
     }
 }

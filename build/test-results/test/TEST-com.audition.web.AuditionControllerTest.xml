@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.audition.web.AuditionControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-10-24T01:52:11" hostname="KATYAINIPANDEY" time="0.945">
+  <properties/>
+  <testcase name="testGetPostsWithFilterReturnsOk()" classname="com.audition.web.AuditionControllerTest" time="0.833"/>
+  <testcase name="testGetPostByIdReturnsOk()" classname="com.audition.web.AuditionControllerTest" time="0.058"/>
+  <testcase name="testGetCommentsForPostReturnsComments()" classname="com.audition.web.AuditionControllerTest" time="0.051"/>
+  <system-out><![CDATA[2024-10-24 07:22:11.871  INFO 17564 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-10-24 07:22:11.872  INFO 17564 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-10-24 07:22:11.877  INFO 17564 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /posts
+       Parameters = {filter=[ ]}
+          Headers = [Accept:"application/json"]
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.audition.web.AuditionController
+           Method = com.audition.web.AuditionController#getPosts(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"userId":1,"id":1,"title":"Post Title","body":"In Post Body","comments":[{"postId":1,"id":1,"name":"Sample","email":"Sample","body":"Sample"}],"postId":1}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2024-10-24 07:22:12.449  INFO 17564 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-10-24 07:22:12.450  INFO 17564 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-10-24 07:22:12.450  INFO 17564 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /posts/1
+       Parameters = {}
+          Headers = [Accept:"application/json"]
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.audition.web.AuditionController
+           Method = com.audition.web.AuditionController#getPostById(int)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"userId":1,"postId":1,"title":"Post Title","body":"In Post Body"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2024-10-24 07:22:12.509  INFO 17564 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-10-24 07:22:12.509  INFO 17564 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-10-24 07:22:12.510  INFO 17564 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

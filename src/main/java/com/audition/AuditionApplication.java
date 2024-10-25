@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AuditionApplication {
 
     public static void main(final String[] args) {
+
         SpringApplication.run(AuditionApplication.class, args);
     }
 
